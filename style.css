@@ -98,7 +98,6 @@ html{
 }
 #about{
     display: flex;
-    /* height: 400px; */
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -111,13 +110,39 @@ html{
 .reverse{
     flex-direction: row-reverse;
 }
+.thumbnail{
+    color: tomato;
+}
 .thumbnail img{
     border-radius: 8px; 
 }
 
+/* Course Section */
+#courseSection{
+    background: rgb(27, 27, 27);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
+}
+.col1{
+    text-align: center;
+    padding: 0 35px;
+    margin: 50px 0;
+}
+.col2{
+    text-align: center;
+    padding: 0 35px;
+    margin: 50px 0;
+}
+
+
+/* Contact Section */
+
 #contact{
     background-color: rgb(156, 150, 150);
-    height: 92vh;
 }
 .contact-heading{
     text-align: center;
@@ -180,6 +205,9 @@ footer{
     #about{
         flex-direction: column-reverse;
         margin-top: 20px;
+    }
+    #courseSection{
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 700px){
