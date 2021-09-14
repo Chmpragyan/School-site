@@ -127,6 +127,9 @@ html{
     margin: auto;
     max-width: 100%;
 }
+.course-heading{
+    text-align: center;
+}
 .col1{
     text-align: center;
     padding: 0 35px;
