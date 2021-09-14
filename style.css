@@ -116,7 +116,7 @@ html{
 }
 /* First column of about page */
 .fcol{
-    padding: 0px 35px;
+    padding: 0px 30px;
     margin: 50px 0;
 }
 .reverse{
@@ -271,5 +271,11 @@ footer{
     }
     .fcol{
         padding: 0px;
+    }
+    .col1{
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
     }
 }
