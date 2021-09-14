@@ -68,7 +68,7 @@ html{
 }
 /* height of home page */
 .homepage{
-    height: 91vh;
+    height: 95vh;
 }
 /* first column of home page */
 .fcolumn{
@@ -131,7 +131,6 @@ html{
 }
 .thumbnail-image{
     margin-bottom: 70px;
-
 }
 
 /* Course Section */
@@ -163,7 +162,6 @@ html{
 .col2 .course_desc{
     text-align: left;
 }
-
 
 /* Contact Section */
 #contact{
@@ -216,7 +214,7 @@ footer{
     margin: 3px
 }
 /* Responsive design */
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 998px){
     .navbar{
         flex-direction: column;
         height: 445px;
@@ -247,6 +245,9 @@ footer{
     #courseSection{
         flex-direction: column;
     }
+    .course-title{
+        padding: 20px;
+    }
     .box{
         flex-direction: column-reverse;
     }
@@ -264,6 +265,9 @@ footer{
     }
     .thumbnail-image{
         margin-bottom: 0px;
+    }
+    .manage_desc{
+        margin-bottom: 50px;
     }
     .fcol{
         padding: 0px;
