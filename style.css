@@ -6,11 +6,13 @@
 html{
     scroll-behavior: smooth;
 }
+/* logo of site */
 .logo a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
+/* navigation bar */
 .navbar{
     display: flex;
     align-items: center;
@@ -18,13 +20,14 @@ html{
     position: sticky;
     top: 0;
 }
+/* navigation with unordered list */
 .navbar .nav-list{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: grey; */
     width: 70%;
 }
+/* navigation with unordered list and list */
 .navbar .nav-list li{
     list-style-type: none;
     padding: 20px 30px;
@@ -34,6 +37,7 @@ html{
     color: white;
     text-transform: uppercase;
 }
+/* search and input for search in right-nav */
 .navbar .right-nav{
     width: 30%;
     padding: 0 23px;
@@ -41,11 +45,13 @@ html{
     justify-content: center;
     align-items: center;
 }
+/* search button */
 #search{
     padding: 5px;
     border: none;
     border-radius: 7px;
 }
+/* bacckground for home page */
 .background{
     background: rgba(0, 0, 0, 0.7) url('saptakoshi.jpg');
     background-size: cover;
@@ -60,16 +66,19 @@ html{
     margin: auto;
     height: 72%;
 }
+/* height of home page */
 .homepage{
-    height: 100vh;
+    height: 91vh;
 }
+/* first column of home page */
 .fcolumn{
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
+/* second column of home page that includes image */
 .scolumn{
-    width: 40%;
+    width: 60%;
 }
 .scolumn img{
     width: 100%;
@@ -83,6 +92,7 @@ html{
 .small-text{
     font-size: 14px;
 }
+/* For button */
 .btn{
     padding: 8px 15px;
     margin: 8px 3px;
@@ -93,9 +103,10 @@ html{
     cursor: pointer;
 }
 .btn-sm{
-    padding: 4px 7px;
+    /* padding: 4px 7px; */
     vertical-align: middle;
 }
+/* About section */
 #about{
     display: flex;
     align-items: center;
@@ -103,18 +114,24 @@ html{
     margin: auto;
     max-width: 80%;
 }
+/* First column of about page */
 .fcol{
-    padding: 0 35px;
+    padding: 0px 35px;
     margin: 50px 0;
 }
 .reverse{
     flex-direction: row-reverse;
 }
+/* Second column that includes thumbnail images */
 .thumbnail{
     color: tomato;
 }
 .thumbnail img{
     border-radius: 8px; 
+}
+.thumbnail-image{
+    margin-bottom: 70px;
+
 }
 
 /* Course Section */
@@ -127,31 +144,38 @@ html{
     margin: auto;
     max-width: 100%;
 }
-.course-heading{
-    text-align: center;
-}
+
 .col1{
     text-align: center;
     padding: 0 35px;
     margin: 50px 0;
+    width: 50%;
 }
 .col2{
     text-align: center;
     padding: 0 35px;
     margin: 50px 0;
+    width: 50%;
+}
+.col1 .course_desc{
+    text-align: left;
+}
+.col2 .course_desc{
+    text-align: left;
 }
 
 
 /* Contact Section */
-
 #contact{
     background-color: rgb(156, 150, 150);
 }
 .contact-heading{
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 30px;
 }
+
+/* Form for contact */
 .form{
     margin: auto;
     max-width: 50%;
@@ -163,13 +187,21 @@ html{
     border-radius: 5px;
     margin: 20px 0;
 }
+.submit-btn{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Footer */
 footer{
     text-align: center;
     padding: 20px 0;
     font-size: 15px;
-    background-color:rgba(0, 0, 0, 0.7)
+    background: rgb(27, 27, 27);
+    color: white;
 }
 
+/* For hamburger */
 .burger{
     position: absolute;
     right: 10px;
@@ -183,7 +215,7 @@ footer{
     background: white;
     margin: 3px
 }
-
+/* Responsive design */
 @media only screen and (max-width: 950px){
     .navbar{
         flex-direction: column;
@@ -194,6 +226,9 @@ footer{
         flex-direction: column;
     }
     #search{
+        width: 100%;
+    }
+    #search .btn{
         width: 100%;
     }
     .burger{
@@ -212,22 +247,23 @@ footer{
     #courseSection{
         flex-direction: column;
     }
-}
-@media only screen and (max-width: 700px){
     .box{
         flex-direction: column-reverse;
     }
     .big-text{
-        text-align: center;
-    }
-    .small-text{
-        text-align: center;
+        text-align: left;
     }
     .button{
         text-align: center;
     }
+    .thumbnail{
+        margin-top: 20px;
+    }
     .thumbnail img{
         width: 100%;
+    }
+    .thumbnail-image{
+        margin-bottom: 0px;
     }
     .fcol{
         padding: 0px;
