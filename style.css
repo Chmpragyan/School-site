@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+.navbar .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
+    width: 70%;
+}
+.navbar .nav-list li{
+    list-style-type: none;
+    padding: 20px 30px;
+}
+.navbar .nav-list li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar .right-nav{
+    width: 30%;
+    padding: 0 23px;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('saptakoshi.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 72%;
+}
+.homepage{
+    height: 100vh;
+}
+.fcolumn{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.scolumn{
+    width: 40%;
+}
+.scolumn img{
+    width: 100%;
+    border-radius: 15%;
+    display: block;
+    margin: auto;
+}
+.big-text{
+    font-size: 29px;
+}
+.small-text{
+    font-size: 14px;
+}
+.btn{
+    padding: 8px 15px;
+    margin: 8px 3px;
+    border: none;
+    border-radius: 15px;
+    background: tomato;
+    color: white;
+    cursor: pointer;
+}
+.btn-sm{
+    padding: 4px 7px;
+    vertical-align: middle;
+}
+#about{
+    display: flex;
+    /* height: 400px; */
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 80%;
+}
+.fcol{
+    padding: 0 35px;
+    margin: 50px 0;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.thumbnail img{
+    border-radius: 8px; 
+}
+
+#contact{
+    background-color: rgb(156, 150, 150);
+    height: 92vh;
+}
+.contact-heading{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.form{
+    margin: auto;
+    max-width: 50%;
+}
+.form .input-form{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    background-color:rgba(0, 0, 0, 0.7)
+}
+
+.burger{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 10px;
+    display: none;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px
+}
+
+@media only screen and (max-width: 950px){
+    .navbar{
+        flex-direction: column;
+        height: 445px;
+        transition: all 1s ease-out;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .nav-height-resp{
+        height: 56px;
+    }
+    .visiblity-resp{
+        opacity: 0;
+    }
+    #about{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .box{
+        flex-direction: column-reverse;
+    }
+    .big-text{
+        text-align: center;
+    }
+    .small-text{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .thumbnail img{
+        width: 100%;
+    }
+    .fcol{
+        padding: 0px;
+    }
+}
